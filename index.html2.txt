@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Database Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">SchoolLogo</a>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Student Database Management</h1>
+                <p>Manage student records efficiently and effectively.</p>
+                <button class="cta-button" onclick="openForm()">Add Student</button>
+            </div>
+        </section>
+
+        <section class="student-list">
+            <h2>Student List</h2>
+            <div id="student-container">
+                <!-- Student entries will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <div class="form-popup" id="studentForm">
+            <form class="form-container" id="addStudentForm">
+                <h2>Add Student</h2>
+                <label for="name"><b>Name</b></label>
+                <input type="text" placeholder="Enter Name" name="name" required>
+                
+                <label for="age"><b>Age</b></label>
+                <input type="number" placeholder="Enter Age" name="age" required>
+                
+                <label for="grade"><b>Grade</b></label>
+                <input type="text" placeholder="Enter Grade" name="grade" required>
+                
+                <button type="submit" class="btn">Add</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 School Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
